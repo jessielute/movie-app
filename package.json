@@ -1,0 +1,23 @@
+{
+  "name": "movie_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessielute/movie-database.git"
+  },
+  "author": "jessie lute",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessielute/movie-database/issues"
+  },
+  "homepage": "https://github.com/jessielute/movie-database#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}
