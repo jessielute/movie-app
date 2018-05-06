@@ -1,0 +1,98 @@
+.movie-container {
+    color: white;
+  }
+  
+body {
+    background-color: #c3f6da;
+  }
+  
+  h1 {
+    color: #f7a39b;
+    text-align: center;
+    font-size: 600%;
+    font-family: "Monoton", cursive;
+    font-weight: normal;
+    font-style: normal;
+    word-spacing: 1vw;
+  }
+  
+  const.movieArray {
+    text-align: center;
+  }
+  
+  h4 {
+    margin: 3vw;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .page-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #fde4e2;
+  }
+  
+  .navbar-header {
+    background-color: #fde4e2;
+  }
+  
+  .collapse.navbar-collapse {
+    background-color: #fde4e2;
+  }
+  
+  li {
+    font-family: "Raleway", sans-serif;
+    color: #36454f;
+  }
+  
+  .navbar-brand {
+    color: #36454f;
+    font-family: "Lobster", cursive;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  h2 {
+    color: #36454f;
+    font-family: "Lobster", cursive;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .container {
+    display: flex;
+    /* or inline-flex */
+  }
+  
+  .col {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .navbar-inverse .navbar-nav > li > a {
+    color: #36454f;
+  }
+  
+  .navbar-inverse .navbar-brand {
+    color: #36454f;
+  }
+  
+  .col-12.col-sm-6.col-md-4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+
+  
+  p {
+    color: #36454f;
+  }

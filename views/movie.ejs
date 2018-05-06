@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Monoton|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" rel="home" href="/" title="Aahan Krish's Blog - Homepage ">hello movies!</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse ">
+
+      <ul class="nav navbar-nav ">
+        <li>
+          <a href="/topic/notes/ ">notes</a>
+        </li>
+        <li>
+          <a href="/topic/dev/ ">dev</a>
+        </li>
+        <li>
+          <a href="/topic/good-reads/ ">good-reads</a>
+        </li>
+        <li>
+          <a href="/topic/art/ ">art</a>
+        </li>
+        <li>
+          <a href="/topic/bookmarks/ ">bookmarks</a>
+        </li>
+        <li>
+          <a href="/all-topics/ ">all</a>
+        </li>
+      </ul>
+
+<body>
+  <form class="navbar-form navbar-right" role="search" id="searchbar">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <button type="submit" class="btn btn-default">go</button>
+  </form>
+
+  <div class="container">
+    <h1>Hello movies!</h1>
+  </div>
+
+  <div class= "container">
+  <p><%= movie.title %>
+  <%= userMovie.year %>
+  <%= userMovie.released %>
+  <%= userMovie.runtime %>
+  <%= userMovie.genre %>
+  <%= userMovie.director %>
+  <%= userMovie.writer %>
+  <%= userMovie.actors %>
+  <%= userMovie.plot%>
+  <%= userMovie.language %>
+  <%= userMovie.country %></p>
+</div>
+  </body>
+
+        
+   
+
+

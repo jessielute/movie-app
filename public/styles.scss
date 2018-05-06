@@ -1,0 +1,104 @@
+@mixin heading-font {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+$primary-color: #f7a39b;
+$secondary-color: #36454f; 
+
+ 
+body {
+    background-color: #c3f6da;
+}
+
+h1 {
+    color: $primary-color;
+    text-align: center;
+    font-size: 600%;
+    font-family: 'Monoton', cursive;
+    font-weight: normal;
+    font-style: normal;
+    word-spacing: 1vw;
+}
+
+const.movieArray {
+    text-align: center;
+}
+
+h4 {
+    margin: 3vw;
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.page-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: lighten($primary-color, 15%); 
+}
+
+.navbar-header {
+    background-color: lighten($primary-color, 15%); 
+}
+
+.collapse.navbar-collapse {
+    background-color: lighten($primary-color, 15%);
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    color: $secondary-color;
+}
+
+
+.navbar-brand {
+    color: $secondary-color;
+    @include heading-font;
+}
+
+h2 {
+    color: $secondary-color;
+   @include heading-font;
+}
+
+.container {
+    display: flex; /* or inline-flex */
+  }
+
+.col {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: $secondary-color;
+}
+
+.navbar-inverse .navbar-brand {
+    color: $secondary-color;
+}
+
+.col-12.col-sm-6.col-md-4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.movie-container {
+        color: white;//fade-out($primary-color, .5)
+}
+
+p {
+    color: $secondary-color;
+}

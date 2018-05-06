@@ -1,0 +1,407 @@
+<div class="container">
+        <div class="row">
+          <h4>
+            <a href= %= `http://localhost:8080/pages/${i}` %>
+              <% for (let i = 0; i < movieArray.length; i++) { %>
+    
+                <div class="col">
+                  <%= movieArray[0].title %>
+                    <%= movieArray[1].title %>
+                      <%= movieArray[2].title %>
+                </div>
+                <div class="col">
+                  <%= movieArray[3].title %>
+                    <%= movieArray[4].title %>
+                      <%= movieArray[5].title %>
+                </div>
+                <div class="col">
+                  <%= movieArray[6].title %>
+                    <%= movieArray[7].title %>
+                      <%= movieArray[8].title %>
+                </div>
+              </h4>
+            </a>
+            <% }; %>
+
+        </div>
+      </div>
+
+      <h4>
+            <a href=< %=` movie/${url}` %> >
+              <div class="container">
+                <% movies[i].title %>
+                </h4>
+                 </a>
+          <p>movies[i].released</p>
+
+
+
+
+
+//full index.ejs code from before i probably fuck it all up
+
+
+
+          <html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <form class="navbar-form navbar-right" role="search" id="searchbar">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search" />
+    </div>
+    <button type="submit" class="btn btn-default">go</button>
+  </form>
+
+  <div class="container">
+    <h1>hello movies!</h1>
+  </div>
+
+  <div class="container">
+      <h2>the extensive database of literally just the first nine movies i could think of.™</h2>
+    </div>
+
+  <% for (let i=0; i<movies.length; i++) { %>
+    <a href `movie/${url}`>
+      <h4>
+        <%= movies[i].title %>
+      </h4>
+    </a>
+    <% }; %>
+  </body>
+    <footer class="page-footer font-small blue pt-4 mt-4">
+
+        <!--Footer Links-->
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+    
+                <!--First column-->
+                <div class="col-md-6">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <!--/.First column-->
+    
+                <!--Second column-->
+                <div class="col-md-6">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+    
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright:
+            <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+        </div>
+        <!--/.Copyright-->
+    
+    </footer>
+
+
+
+
+</html>
+<form class="navbar-form navbar-right" role="search" id="searchbar">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" />
+        </div>
+        <button type="submit" class="btn btn-default">go</button>
+      </form>
+
+
+
+
+      <h4>
+        <div class="col">
+            <a href `movie/${url}`>
+            <%=  movies[0].title %>
+            </a>
+            <a href `movie/${url}`>
+            <%= movies[1].title %>
+            </a>
+            <a href `movie/${url}`>
+                <%= movies[2].title %>
+            </a>
+          </div>
+          <div class="col">
+            i'm an empty column doodely do 
+          </div>
+          <div class="col">
+              <a href `movie/${url}`>
+            <%= movies[3].title %>
+              </a>
+            <a href `movie/${url}`>
+              <%= movies[4].title %>
+            </a>
+            <a href `movie/${url}`>
+                <%= movies[5].title %>
+            </a>
+          </div>
+          <div class="col">
+              <a href `movie/${url}`>
+            <%= movies[6].title %>
+              </a>
+              <a href `movie/${url}`>
+              <%= movies[7].title %>
+              </a>
+              <a href `movie/${url}`>
+                <%= movies[8].title %>
+              </a>
+          </div>
+      </h4>
+
+
+          
+
+
+
+      <div class= "movie-container">
+            <% for (let i=0; i<movies.length; i++) { %>
+              <a class="movie-link" href= <%= `http://localhost:8080/movie/${i}` %> >
+            <h4>
+              <div class="row"></div>
+                <div class="col s12 m6 4">
+                  <a href `movie/${url}`>
+                  <%=  movies[0].title %>
+                  </a>
+                  <a href `movie/${url}`>
+                  <%= movies[1].title %>
+                  </a>
+                  <a href `movie/${url}`>
+                      <%= movies[2].title %>
+                  </a>
+                </div>
+                <div class="col s12 m6 4">
+                  i'm an empty column doodely do 
+                </div>
+                <div class="col s12 m6 4">
+                    <a href `movie/${url}`>
+                  <%= movies[3].title %>
+                    </a>
+                  <a href `movie/${url}`>
+                    <%= movies[4].title %>
+                  </a>
+                  <a href `movie/${url}`>
+                      <%= movies[5].title %>
+                  </a>
+                </div>
+                <div class="col s12 m6 4">
+                    <a href `movie/${url}`>
+                  <%= movies[6].title %>
+                    </a>
+                    <a href `movie/${url}`>
+                    <%= movies[7].title %>
+                    </a>
+                    <a href `movie/${url}`>
+                      <%= movies[8].title %>
+                    </a>
+                </div>
+              </div>
+            </h4>
+          </div>
+          <% }; %>
+
+          body {
+    background-color: #c3f6da;
+}
+
+h1 {
+    color: #f7a39b;
+    text-align: center;
+    font-size: 600%;
+    font-family: 'Monoton', cursive;
+    font-weight: normal;
+    font-style: normal;
+    word-spacing: 1vw;
+}
+
+const.movieArray {
+    text-align: center;
+}
+
+h4 {
+    margin: 3vw;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.page-footer {
+    margin-bottom: auto;
+    margin-top: auto;
+    background-color: #f7a39b;
+}
+
+.navbar-header {
+    background-color: #f7a39b;
+}
+
+.collapse.navbar-collapse {
+    background-color: #f7a39b;
+}
+
+li {
+font-family: 'Raleway', sans-serif;
+color: #36454f; 
+}
+
+
+.navbar-brand {
+    color: #36454f; 
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+   color: #36454f; 
+    font-family: 'Lobster', cursive;
+}
+
+.container {
+    display: flex; /* or inline-flex */
+  }
+
+.col {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #36454f; 
+}
+
+.navbar-inverse .navbar-brand {
+    color: #36454f; 
+}
+
+.col-12.col-sm-6.col-md-4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+SASS!!!
+
+@mixin heading-font {
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+$primary-color: #f7a39b;
+
+body {
+  background-color: #c3f6da;
+}
+
+h1 {
+  color: lighten($primary-color, 15%); 
+  text-align: center;
+  font-size: 600%;
+  font-family: 'Monoton', cursive;
+  font-weight: normal;
+  font-style: normal;
+  word-spacing: 1vw;
+}
+
+const.movieArray {
+  text-align: center;
+}
+
+h4 {
+  margin: 3vw;
+  text-align: center;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+.page-footer {
+  margin-bottom: auto;
+  margin-top: auto;
+  background-color:$primary-color; 
+}
+
+.navbar-header {
+  background-color:$primary-color; 
+}
+
+.collapse.navbar-collapse {
+  background-color:$primary-color; 
+}
+
+li {
+font-family: 'Raleway', sans-serif;
+color: #36454f; 
+}
+
+
+.navbar-brand {
+  color: #36454f; 
+  @include heading-font;
+}
+
+h2 {
+ color: #36454f; 
+ @include heading-font;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+}
+
+.col {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #36454f; 
+}
+
+.navbar-inverse .navbar-brand {
+  color: #36454f; 
+}
+
+.col-12.col-sm-6.col-md-4 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie-container {
+      color: fade-out($primary-color, .5)
+}
